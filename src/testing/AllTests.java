@@ -7,7 +7,7 @@ public class AllTests {
 
 	public static Test suite() {
 		TestSuite suite = new TestSuite(AllTests.class.getName());
-		//$JUnit-BEGIN$
+		//$JUnit-BEGIN$ This is really cool
 		suite.addTestSuite(countATest.class);
 		suite.addTestSuite(squareTest.class);
 		//$JUnit-END$
