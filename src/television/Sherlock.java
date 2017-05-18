@@ -1,6 +1,6 @@
 package television;
 
-public class Sherlock implements YourShow {
+public class  implements YourShow {
 
 	public void execute(String tv1, String tv2, String tv3, String tv4) {
 		// TODO Auto-generated method stub
