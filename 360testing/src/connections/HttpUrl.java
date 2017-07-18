@@ -15,11 +15,19 @@ public class HttpUrl {
 		input = new Scanner(System.in);
 		String username = null;
 		String password = null;
-		System.out.println("Please enter your username: ");
-		username = input.next();
+		boolean theError = true;
+		do{
+			try{
+				System.out.println("Enter Username Name: ");
+				username = (input.next());
+				theError = false;
+				
+			}catch (Exception e){
+				System.out.println("Error!");
+				input.reset();
+			}while (theError);
 		
-		System.out.println("Please enter your password: ");
-		password = input.next();
+	
 		
 		String urlLink = "http://localhost/Testing/index.php?username="+username+"&password="+password;
 		URL url = new URL(urlLink);
@@ -29,11 +37,15 @@ public class HttpUrl {
 		BufferedReader in = new BufferedReader(new InputStreamReader(connect.getInputStream()));
 		StringBuffer buffy = new StringBuffer();
 		String line;
+		buffy.append(line);
 		
-		while((line = in.readLine()) != null){
-			buffy.append(line);
-		}
 		input.close();
 		System.out.println(buffy.toString());
+		}
 	}
-}
+
+	
+
+	
+
+		
