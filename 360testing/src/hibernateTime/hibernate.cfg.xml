@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+   <session-factory>
+   <property name="hibernate.dialect">
+      org.hibernate.dialect.MySQLDialect
+   </property>
+   <property name="hibernate.connection.driver_class">
+      com.mysql.jdbc.Driver
+   </property>
+
+   <property name="hibernate.connection.url">
+      http://localhost/phpmyadmin/db_structure.php?server=1&db=guitar1&token=6575ec5a7ff73f5bbb0ce0840a9f0aff
+   </property>
+   <property name="hibernate.connection.username">
+      adamstre_iClient
+   </property>
+   <property name="hibernate.connection.password">
+      CbII6?bR^3QT
+   </property>
+
+   <mapping resource="Employee.hbm.xml"/>
+
+</session-factory>
+</hibernate-configuration>

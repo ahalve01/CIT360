@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+   <class name="guitar1" table="products">
+      <meta attribute="class-description"> 
+      </meta>
+      <id name="productID" type="int" column="productID">
+         <generator class="native"/>
+      </id>
+      <property name="Code" column="productCode" type="string"/>
+      <property name="Name" column="productName" type="string"/>
+      <property name="Price" column="listPrice" type="int"/>
+      <property name="ID" column="productID" type="int"/>
+   </class>
+</hibernate-mapping>
